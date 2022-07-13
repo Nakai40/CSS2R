@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CSS2</title>
 </head>
 
 <body>
     <div class="corce-container">
         <h2>コース一覧</h2>
-        <table>
+        <table class="cource-table">
             <tr>
                 <th>コース</th>
                 <th>A</th>
@@ -19,19 +20,19 @@
                 <th>C</th>
             </tr>
             <tr>
-                <td>職業</td>
+                <th>職業</th>
                 <td>アヒージョ</td>
                 <td>アクアパッツァ</td>
                 <td>ポトフ</td>
             </tr>
             <tr>
-                <td>主菜</td>
+                <th>主菜</th>
                 <td>パエリア</td>
                 <td>ボロネーゼ</td>
                 <td>フォアグラ</td>
             </tr>
             <tr>
-                <td>デザート</td>
+                <th>デザート</th>
                 <td>フラン</td>
                 <td>ティラミス</td>
                 <td>カヌレ</td>
@@ -41,37 +42,43 @@
     <div class="reservation">
         <h2>Reservation</h2>
         <form action="/form.php" method="post">
-            <div>
+            <div class="name-form form">
                 <label for="name">名前</label>
                 <input type="text" id="name" name="name" value="" placeholder="Name">
             </div>
-            <div>
+            <div class="mail-form form">
                 <label for="email">メールアドレス</label>
                 <input type="mail" id="email" name="email" name="name" value="" placeholder="Mail Adress">
             </div>
-            <div>
+            <div class="cource-form form">
                 <label for="cource">コース</label>
-                <label><input type="radio" name="項目名" value="値">A</label>
-                <label><input type="radio" name="項目名" value="値">B</label>
-                <label><input type="radio" name="項目名" value="値">C</label>
+                <div class="cource-option">
+                    <label><input type="radio" name="項目名" value="値">A</label>
+                    <label><input type="radio" name="項目名" value="値">B</label>
+                    <label><input type="radio" name="項目名" value="値">C</label>
+                </div>
+                
             </div>
-            <div>
+            <div class="branch-form form">
                 <label for="branch">支店名</label>
                 <select name="branch-list">
                     <option value="スペイン">スペイン</option>
                     <option value="イタリア">イタリア</option>
                     <option value="フランス">フランス</option>
-                  </select>
+                </select>
             </div>
-            <div>
+            <div class="person-form form">
                 <label for="person">人物</label>
                 <input type="mail" id="person" name="person">
             </div>
-            <div>
+            <div class="comment-form form">
                 <label for="comment">コメント</label>
                 <textarea id="message" name="message" placeholder="コメント"></textarea>
+                <p class="agree">同意する<input type="checkbox"></p>
             </div>
-            <input type="submit" value="送信する">
+            <div class="submit-container">
+                <input type="submit" value="送信する">
+            </div>
         </form>
     </div>
 </body>

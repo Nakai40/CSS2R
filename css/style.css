@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reservation{
+    width: 352px;
+}
+
+.cource-table{
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-collapse:collapse;
+}
+
+.cource-table tr, .cource-table th, .cource-table td{
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.form{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.person-form input, .name-form input, .mail-form input{
+    display: inline-block;
+    width: 50%;
+}
+
+.branch-form select{
+    width: 25%;
+}
+
+.comment-form textarea{
+    width: 80%;
+    height: 100px;
+    resize: none;
+}
+
+
+.submit-container{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
